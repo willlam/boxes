@@ -21,6 +21,6 @@
 
 -(float) volume;
 
--(void) canFit;
+-(BOOL) canFit:(Box *)box;
 
 @end

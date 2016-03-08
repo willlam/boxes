@@ -31,8 +31,12 @@
 	return self.width * self.height * self.height;
 }
 
--(void) canFit {
-	if (
+-(BOOL) canFit:(Box *)box {
+	if ([self volume] > [box volume]) {
+		return YES;
+	} else {
+	return NO;
+	}
 }
 
 @end
